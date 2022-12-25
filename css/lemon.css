@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #c9c7c777 ;
+}
+/* global rules */
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+
+}
+
+/* small scr */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medieum scr */
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large scr */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* end of global rules */
+.head-text{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media(max-width:767){
+  .head-text{
+margin-left: 50%;    
+  }
+}
+.head-text img{
+  width: 200px;
+  text-align: center;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.head-text img:hover{
+opacity: 0.8;
+}
+.menu-text{
+  padding:20px 0;
+  display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+.menu-text h1{
+text-align: center;
+margin: 12px;
+text-transform: capitalize;
+font-size: 40px;
+font-weight: 600;
+color:#055160;
+
+}
+.menu-text .alert{
+  background-color: #cff4fc;
+  border-color: #b6effb;
+  color: #055160;
+  font-size: 17px;
+  padding: 18px 18px;
+margin-bottom: 30px;
+}
+.menu-item{
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  row-gap: 20px;
+  column-gap: 40px;
+  align-items: center;
+}
+.menu-item .item{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.menu-item .item img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.menu-item .item-text{
+  flex: 1;
+
+}
+@media(max-width: 1200px){
+  .menu-item .item-text{
+    text-align: center;
+  }
+}
+.item-text h4{
+  font-size: 22px;
+font-weight: 500;
+line-height: 2;
+color: #055160;
+text-transform: capitalize;
+letter-spacing: 1;
+}
+.item-text h4 span{
+  padding: 7px 4px;
+  border-radius: 2px;
+  margin-left: 45px;
+  background-color: #FF9300;
+  color: #ffff;
+
+}
+.item-text p{
+font-size: 14px;
+letter-spacing: 2;
+color: #000;
+
+}
